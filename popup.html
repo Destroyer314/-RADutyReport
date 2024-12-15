@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extension Settings</title>
+  <style>
+    body {
+        width: 400px;
+        font-family: Arial, sans-serif;
+        background-color: #005035; /* Dark green */
+        color: #FFFFFF; /* White text */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+      max-width: 325px;
+      width: 100%;
+      padding: 20px;
+      background-color: #A49665; /* Gold accent */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    label {
+      font-size: 1rem;
+    }
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #FFFFFF;
+      border-radius: 4px;
+      background-color: #FFFFFF;
+      color: #005035;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #005035;
+      color: #FFFFFF;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003D27; /* Slightly darker green */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Settings</h1>
+    <label>
+      Residence Hall:
+      <select id="hall">
+        <option value="">UNC Charlotte</option>
+        <optgroup label="East Village">
+          <option value="Cedar Hall">Cedar Hall</option>
+          <option value="Greek Village House 1">Greek Village House 1</option>
+          <option value="Hawthorn Hall">Hawthorn Hall</option>
+          <option value="Hickory Hall">Hickory Hall</option>
+          <option value="Martin Hall">Martin Hall</option>
+          <option value="Witherspoon Hall">Witherspoon Hall</option>
+        </optgroup>
+        <optgroup label="Lower South Village">
+          <option value="Holshouser Hall">Holshouser Hall</option>
+          <option value="Hunt Hall">Hunt Hall</option>
+          <option value="Laurel Hall">Laurel Hall</option>
+          <option value="Scott Hall">Scott Hall</option>
+        </optgroup>
+        <optgroup label="North Village">
+          <option value="Belk Hall">Belk Hall</option>
+          <option value="CF Lynch Hall">CF Lynch Hall</option>
+          <option value="Miltimore Hall">Miltimore Hall</option>
+          <option value="Wallis Hall">Wallis Hall</option>
+        </optgroup>
+        <optgroup label="South East Village">
+          <option value="Elm Hall">Elm Hall</option>
+          <option value="Levine Hall">Levine Hall</option>
+          <option value="Maple Hall">Maple Hall</option>
+          <option value="Moore Hall">Moore Hall</option>
+          <option value="Oak Hall">Oak Hall</option>
+          <option value="Pine Hall">Pine Hall</option>
+          <option value="Sanford Hall">Sanford Hall</option>
+          <option value="Wilson Hall">Wilson Hall</option>
+        </optgroup>
+        <option value="Non-Resident">Non-Resident</option>
+      </select>
+    </label>
+    <br /><br />
+    <button id="save">Save</button>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "RA Duty Report Autofill",
+    "version": "1.0",
+    "description": "Injects custom code into the RA Duty Report.",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["*://charlotte.erezlife.com/app/one.php?manager=FormView&form_type_id=20/*"],
+  
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "RA Duty Report Autofill"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://charlotte.erezlife.com/app/one.php?manager=FormView&form_type_id=20*"],
+        "js": ["content.js"]
+      }
+    ],
+    "options_page": "options.html"
+  }
+  
